@@ -1,0 +1,72 @@
+(para mac zsh)
+pwd: Nos muestra la ruta de carpetas en la que te encuentras ahora mismo.
+mkdir: Nos permite crear carpetas (por ejemplo, mkdir Carpeta-Importante).
+touch: Nos permite crear archivos (por ejemplo, touch archivo.txt).
+rm: Nos permite borrar un archivo o carpeta (por ejemplo, rm archivo.txt).
+cat: Ver el contenido de un archivo (por ejemplo, cat nombre-archivo.txt).
+ls: Nos permite cambiar ver los archivos de la carpeta donde estamos ahora mismo. 
+
+ls -a: Mostrar todos los archivos, incluso los ocultos.
+ls -l: Ver todos los archivos como una lista.
+history : revisa los comandos.
+clear = limpia consola
+code = abre vs code. ctrl/comand L
+
+--help (todos los comandos)
+salimos con la letra Q
+/******************/
+
+directorio stagin repositorio
+
+arranca untracked (no se rastrea)
+stagin es espacio en memoria ram
+tracked lo rastrea con git add.
+
+
+******
+git init= inicio
+git config --global user.name / email " "
+Si por algún motivo te equivocaste en el nombre o email que configuraste al principio, lo puedes modificar de la siguiente manera:
+git config --global --replace-all user.name “Aquí va tu nombre modificado”
+O si lo deseas eliminar y añadir uno nuevo
+git config --global --unset-all user.name :Elimina el nombre del usuario
+git config --global --add user.name “Aquí va tu nombre”
+
+
+
+git init: para inicializar el repositorio git y el staged
+git add nombre_del_archivo.txt: enviar el archivo al staged
+git status: ver el estado, si se requiere agregar al starget o si se requiere commit
+git commit -m se genra un commit.
+git conf: para ver las posibles configuraciones
+
+git log: nos dice el historial de cambios. (statt)
+git diff: entre los numeros hac comparacion
+
+git conf --list: para ver la lista de configuraciones hechas
+git rm --cached nombre_del_archivo.txt: para eliminar el archivo del staged(ram)
+git rm nombre_del_archivo.txt: para eliminar del repositorio
+
+/**ramas**/
+por defecto rama master main  versiones v1 v2 v3
+
+git checkout (con lo de log)
+git checkout master (nombre archivo)vuelve
+
+experimentos 
+buxfixing
+hotfix (se le dice cuando se hace una rama para solucionar problemas.)
+
+git branch -nombre de la rama-: Con este comando se genera una nueva rama.
+git show = muestra todo lo que se hizo
+
+git commit -am "" (hacer el commit en rama)
+git checkout -nombre de la rama-: Con este comando puedes saltar de una rama a otra.
+(hace un cambio git add . git show)
+git branch (te dice las ramas)
+
+git merge (nombre de la rama)(nombre de merge)(posicionate en master)
+
+git checkout -b rama: Genera una rama y nos mueve a ella automáticamente, Es decir, es la combinación de git brach y git checkout al mismo tiempo.
+
+git merge  
