@@ -59,4 +59,5 @@ console.log("estudio en " +palabrAUno+palabrADos)
 let palabrAIngresada = prompt("Introduzca su nombre:")
 
 //los datos que recupera prompt los revcura como cadena
-console.log(palabrAIngresada.toString+""+palabrAUno+palabrADos)
+console.log(palabrAIngresada.toString+""+ "" +palabrAUno+palabrADos)
+// dudads
